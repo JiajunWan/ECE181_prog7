@@ -1,4 +1,4 @@
-# ECE 181 Prog7 CIFAR-10 Imgage Classification
+# ECE 181 Prog7 CIFAR-10 Image Classification
 - I change the network topology by switching the output size of the first CNN to 32 instead of 64, which tends to converge faster and train faster. And I use BatchNormalization Layer between Convolution and Activation layers to normalize the input for Activation layer. I add a Dropout Layer at the end of each network block to stochastically drop weights trained to prevent overfitting.
 - I use Adam Optimizer for training which gives a higher convergence rate and higher overall accuracy.
 - I use jupyter notebook on a machine different than csil machine. So the training time is different (longer on my machine), which is reflected on the log of jupyter notebook. But the training time for one epoch on csil machine is around 380s, which matches the range from 5-6 minutes.
